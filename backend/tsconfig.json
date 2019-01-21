@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "outDir": "out",
+        "allowJs": true,
+        "lib": ["es6"]
+    },
+    "include": ["src/*.ts"],
+    "exclude": ["src/*.spec.ts"]
+}

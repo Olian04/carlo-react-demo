@@ -1,0 +1,31 @@
+{
+  "name": "@olian/carlo-react-demo",
+  "version": "1.0.0",
+  "description": "Trying to get a react x carlo demo working",
+  "main": "app/main.js",
+  "scripts": {
+    "backend:compile": "tsc --p backend/tsconfig.json",
+    "frontend:compile": "cd frontend && npm run build",
+    "prestart": "npm run backend:compile && npm run frontend:compile",
+    "start": "node backend/out/app.js",
+    "backend:install": "cd backend && npm i",
+    "frontend:install": "cd frontend && npm i",
+    "postinstall": "npm run backend:install && npm run frontend:install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Olian04/carlo-react-demo.git"
+  },
+  "keywords": [
+    "carlo",
+    "react",
+    "demo"
+  ],
+  "author": "Olian04",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Olian04/carlo-react-demo/issues"
+  },
+  "homepage": "https://github.com/Olian04/carlo-react-demo#readme",
+  "dependencies": {}
+}
